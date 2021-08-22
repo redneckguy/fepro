@@ -54,7 +54,7 @@ function equalityCheck() {
 
 //the range of a probable number
 // let rangeOfNumbers = parseInt(prompt("Enter a number for the probable range"));
-let rangeOfNumbers = checkValidNumber();
+const rangeOfNumbers = checkValidNumber();
 
 // generation of a probable number
 const randNum = Math.floor(Math.random()*rangeOfNumbers + 1);
