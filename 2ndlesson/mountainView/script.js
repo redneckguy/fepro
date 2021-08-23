@@ -17,9 +17,9 @@ const mountArr = [];
 
 //************* USING CYCLES ***********
 
-let defltMount = 3;
-let addinMount = 0;
-let sumAddMount = defltMount + addinMount;
+// let defltMount = 3;
+// let addinMount = 0;
+// let sumAddMount = defltMount + addinMount;
 let cycleHash = '';
 
 function createLoopMountain (mountAmount) {
@@ -42,6 +42,7 @@ function createLoopMountain (mountAmount) {
     //     console.log(cycleHash + '\u25E3');
     // }
     //     cycleHash = cycleHash.concat('#');
+
     // for (let k = 0; k < 1; k++) {
     //     console.log(cycleHash + '\u29D0');
     // }
