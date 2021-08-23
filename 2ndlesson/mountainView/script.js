@@ -11,12 +11,56 @@ function checkValidNumber () {
 }
 
 const mountAmount = checkValidNumber ();
-
-// const mountAmount = 4;
 let hash = '';
 const arrOfHashes = [];
 const mountArr = [];
 
+//************* USING CYCLES ***********
+
+let defltMount = 3;
+let addinMount = 0;
+let sumAddMount = defltMount + addinMount;
+let cycleHash = '';
+
+function createLoopMountain (mountAmount) {
+
+    for (let i = 0; i < mountAmount; i++) {
+        console.log(cycleHash + '\u25E3');
+        cycleHash = cycleHash.concat('#');
+    }
+
+    console.log(cycleHash + '\u29D0');
+
+    cycleHash = cycleHash.substring(0, cycleHash.length-1);
+
+    for (let i = mountAmount; i > 0; i--) {
+        console.log(cycleHash + '\u25E4');
+        cycleHash = cycleHash.substring(0, cycleHash.length-1);
+    }
+
+    // for (let j = 0; j < Math.floor(sumAddMount/2); j++) {
+    //     console.log(cycleHash + '\u25E3');
+    // }
+    //     cycleHash = cycleHash.concat('#');
+    // for (let k = 0; k < 1; k++) {
+    //     console.log(cycleHash + '\u29D0');
+    // }
+    //
+    // for (let k = 1; k >=0; k--) {
+    //     console.log(cycleHash + '\u25E4');
+    // }
+    //addinMount += 2;
+}
+
+for (let i = 1; i <= mountAmount; i++) {
+    createLoopMountain(i);
+}
+
+console.log('');
+console.log('');
+console.log('');
+
+//*****USING ARRAYS************
 
 //create a mount
 function createMountain(mountAmount) {
