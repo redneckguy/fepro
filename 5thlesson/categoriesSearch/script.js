@@ -181,7 +181,7 @@ function findItem(item) {
     })
 }
 
-console.log(findCategoryName(categoriesTree))
+console.table(findCategoryName(categoriesTree))
 console.log('')
 
 // FUNC #2
@@ -203,7 +203,7 @@ function findNotDisabledCategories(array) {
     return notDisabledCategories
 }
 
-console.log(findNotDisabledCategories(categoriesTree));
+console.table(findNotDisabledCategories(categoriesTree));
 console.log('')
 
 
@@ -239,4 +239,4 @@ function searchForCategories(item) {
     })
 }
 
-console.log(findNotDisabledCatName(categoriesTree));
+console.table(findNotDisabledCatName(categoriesTree));
